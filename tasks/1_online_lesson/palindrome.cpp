@@ -18,14 +18,12 @@ bool check_palindrome(std::string &word){
 }
 
 
-int main (int argc, char *argv[]){
+int main (){
 
         std::string word_sentence;
         std::cout << "Give me word or sentence: \n";
         std::getline(std::cin, word_sentence);
        
-       	int length = word_sentence.length();
-
         if (check_palindrome(word_sentence)){
 	       	std::cout<<"It is palindrome.\n";
 	}
