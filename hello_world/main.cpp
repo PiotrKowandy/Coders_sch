@@ -2,7 +2,7 @@
 
 int main (){
 
-	cout<<"Hello world!" << std::endl; //here is error
+	std::cout<<"Hello world!" << std::endl;
 	std::cout<<"Hello coders!!!!" << std::endl;
 	return 0;
 }
