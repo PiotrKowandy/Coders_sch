@@ -23,3 +23,5 @@ Enter value of a: 5
 Enter value of b: 3
 After swaping a: 3 b: 5
 */
+
+//clang-format google_style.cpp -i --style=Google
