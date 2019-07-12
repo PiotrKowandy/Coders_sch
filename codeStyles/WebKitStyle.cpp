@@ -22,3 +22,5 @@ Enter value of a: 5
 Enter value of b: 3
 After swaping a: 3 b: 5
 */
+
+//clang-format WebKitStyle.cpp -i --style=Webkit
