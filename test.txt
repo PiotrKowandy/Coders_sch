@@ -1,2 +1,3 @@
 test file
 
+this line is bad
