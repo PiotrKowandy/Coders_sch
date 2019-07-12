@@ -2,6 +2,8 @@
 
 using namespace std;
 
+int func(int a) { return a; }
+
 int main() {
   int a, b, c;
   cout << "Enter value of a: ";
