@@ -1,3 +1,7 @@
 test file
 
+<<<<<<< HEAD
 this line is bad
+=======
+wrong text!!!
+>>>>>>> parent of d1021d0... good file
