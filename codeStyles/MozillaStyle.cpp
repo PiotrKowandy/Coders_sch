@@ -29,4 +29,4 @@ Enter value of b: 3
 After swaping a: 3 b: 5
 */
 
-//clang-format WebKitStyle.cpp -i --style=Webkit
+//clang-format MozillaStyle.cpp -i --style=Mozilla
