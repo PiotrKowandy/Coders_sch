@@ -2,6 +2,8 @@
 
 using namespace std;
 
+int func(int a) { return a; }
+
 int main() {
   int a, b, c;
   cout << "Enter value of a: ";
@@ -12,6 +14,7 @@ int main() {
   a = b;
   b = c;
   cout << "After swaping a: " << a << " b: " << b;
+
   return 0;
 }
 
