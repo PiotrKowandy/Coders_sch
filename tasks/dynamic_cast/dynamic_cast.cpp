@@ -88,7 +88,11 @@ int main()
 Constructor -> Car.
 Constructor -> Car.
 Constructor -> BMW.
-ok
+We're gonna check if ptrToCar could point on objects of Bmw type.
+ptrToCar can't point on objects of BMW types.
+We're gonna check if ptrToBmw could point on object of Car type.
+ptrToCar before dynamic_cast:  type of *ptrToCar: 3Car I'm car.
+ptrToCar after dynamic_cast: type of *ptrToCar: 3Bmw I'm BMW.
 Destructor -> BMW.
 Desctructor -> Car.
 Desctructor -> Car.
