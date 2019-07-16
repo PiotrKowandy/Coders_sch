@@ -1,47 +1,25 @@
 #include <iostream>
 #include <string>
+#include <string_view>
 
-bool check_palindrome(std::string word){
+bool palindrom(std::string_view napis)
+{
+    std::string_view word = napis;
+    if(word.size() < 2) return true;
 
-	if (word.empty()==false)
-	{
-		std::string::iterator it_start = word.begin();
-		std::string::iterator it_end = word.end();
-
-		if (*it_start != *it_end )
-		{
-			return false;
-		}
-		else
-		{
-			word.erase(*it_start);
-			word.erase(*it_end);
-		
-			if (word.empty())
-			{
-				return true;
-			}
-			else
-			{
-				return check_palindrome(word);
-			}
-
-		}	
-	}
-	else
-	{
-		return true;
-	}
+    return word.front() == word.back()
+        && palindrom(word.substr(1, word.size() - 2));
 }
-
 
 int main (){
 
         std::string word_sentence;
-        std::cout << "Give me word or sentence: \n";
-        std::getline(std::cin, word_sentence);
-       
-        if (check_palindrome(word_sentence)){
+        //std::cout << "Give me word or sentence: \n";
+        //std::getline(std::cin, word_sentence);
+        word_sentence = "madam";
+	std::string_view word_sentence_view = word_sentence;
+
+        if (palindrom(word_sentence_view)){
 	       	std::cout<<"It is palindrome.\n";
 	}
         else{
